@@ -160,50 +160,51 @@ async def imdb_callback(bot: Client, query: CallbackQuery):
                 )
             ]
         ]
-      if imdb:
-caption = IMDB_TEMPLATE.format(
-query = imdb['title'],
-title = imdb['title'],
-votes = imdb['votes'],
-aka = imdb["aka"],
-seasons = imdb["seasons"],
-box_office = imdb['box_office'],
-localized_title = imdb['localized_title'],
-kind = imdb['kind'],
-imdb_id = imdb["imdb_id"],
-cast = imdb["cast"],
-runtime = imdb["runtime"],
-countries = imdb["countries"],
-certificates = imdb["certificates"],
-languages = imdb["languages"],
-director = imdb["director"],
-writer = imdb["writer"],
-producer = imdb["producer"],
-composer = imdb["composer"],
-cinematographer = imdb["cinematographer"],
-music_team = imdb["music_team"],
-distributors = imdb["distributors"],
-release_date = imdb['release_date'],
-year = imdb['year'],
-genres = imdb['genres'],
-poster = imdb['poster'],
-plot = imdb['plot'],
-rating = imdb['rating'],
-url = imdb['url']
-)
-else:
-caption = "No Results"
-if imdb.get('poster'):
-try:
-await query.message.reply_photo(photo=imdb['poster'], caption=caption, reply_markup=InlineKeyboardMarkup(btn))
-except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
-pic = imdb.get('poster')
-poster = pic.replace('.jpg', "._V1_UX360.jpg")
-await query.message.reply_photo(photo=imdb['poster'], caption=caption, reply_markup=InlineKeyboardMarkup(btn))
-except Exception as e:
-logger.exception(e)
-await query.message.reply(caption, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=False)
-await query.message.delete()
-else:
-await query.message.edit(caption, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=False)
-await query.answer()
+    if imdb:
+        caption = IMDB_TEMPLATE.format(
+            query = imdb['title'],
+            title = imdb['title'],
+            votes = imdb['votes'],
+            aka = imdb["aka"],
+            seasons = imdb["seasons"],
+            box_office = imdb['box_office'],
+            localized_title = imdb['localized_title'],
+            kind = imdb['kind'],
+            imdb_id = imdb["imdb_id"],
+            cast = imdb["cast"],
+            runtime = imdb["runtime"],
+            countries = imdb["countries"],
+            certificates = imdb["certificates"],
+            languages = imdb["languages"],
+            director = imdb["director"],
+            writer = imdb["writer"],
+            producer = imdb["producer"],
+            composer = imdb["composer"],
+            cinematographer = imdb["cinematographer"],
+            music_team = imdb["music_team"],
+            distributors = imdb["distributors"],
+            release_date = imdb['release_date'],
+            year = imdb['year'],
+            genres = imdb['genres'],
+            poster = imdb['poster'],
+            plot = imdb['plot'],
+            rating = imdb['rating'],
+            url = imdb['url']
+        )
+    else:
+        caption = "No Results"
+    if imdb.get('poster'):
+        try:
+            await query.message.reply_photo(photo=imdb['poster'], caption=caption, reply_markup=InlineKeyboardMarkup(btn))
+        except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
+            pic = imdb.get('poster')
+            poster = pic.replace('.jpg', "._V1_UX360.jpg")
+            await query.message.reply_photo(photo=imdb['poster'], caption=caption, reply_markup=InlineKeyboardMarkup(btn))
+        except Exception as e:
+            logger.exception(e)
+            await query.message.reply(caption, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=False)
+        await query.message.delete()
+    else:
+        await query.message.edit(caption, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=False)
+    await query.answer()
+        
