@@ -18,11 +18,8 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
 [
-InlineKeyboardButton('Search', switch_inline_query_current_chat='remo')
+InlineKeyboardButton('🔍Search🔎', switch_inline_query_current_chat='remo')
 ],
-[
-InlineKeyboardButton('Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
-]
 ]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
