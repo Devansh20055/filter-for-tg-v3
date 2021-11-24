@@ -18,7 +18,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
 [
-InlineKeyboardButton('Search', url='https://t.me/TeamEvamaria')
+InlineKeyboardButton('Search', switch_inline_query_current_chat='remo')
 ],
 [
 InlineKeyboardButton('Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
