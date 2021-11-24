@@ -3,7 +3,7 @@ class script(object):
 
 ╰─•>> You can download Movies & Series in Here.
 ╰─•>> Click the Below Button "Search" to Search movies.
-Demo How to Download ➜ https://t.me/how2downloads/6"""
+"""
     HELP_TXT = """Hello {}
 Here is your help information.....
 ╰─•>> Then type your movie name.
