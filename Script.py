@@ -1,21 +1,16 @@
 class script(object):
     START_TXT = """Hello {},
 
-╰─•>> You can download Movies in Here.
-╰─•>> Click the Below Button "Search",
-╰─•>> Then type your movie name.
-╰─•>> Next Click Which Size You Want.😍
-
-╰─•>> உங்களுக்கு ஒன்னும் தெரியலன இவர கேளுக சொல்லுவாரு 👉➜ @selfiebd
-
-╰─•>> அப்படி இல்லன இதை பருக ➜ அந்த குரங்கு தொடவும் 👉👉 https://t.me/how2downloads/7
+╰─•>> You can download Movies & Series in Here.
+╰─•>> Click the Below Button "Search" to Search movies,
 
 •☆• Power by @umlinks
 •☆• Admin @selfiebd
-
-🙈🙉🙊🐵🐒🦍🙈🙉🙊🐵🐒🦍"""
+"""
     HELP_TXT = """Hello {}
-Here is your help information....."""
+Here is your help information.....
+╰─•>> Then type your movie name.
+╰─•>> Next Click Which Size You Want.😍"""
     ABOUT_TXT = """✯ I am a: {}
 ✯ You can access me: <a href=https://t.me/groupdc>Group Dc Bots</a>
 ✯ Admin : @Selfiebd
@@ -105,8 +100,8 @@ This module only works for my admins
 • /channel - <code>to get list of total connected channels</code>
 • /broadcast - <code>to broadcast a message to all users</code>"""
     STATUS_TXT = """★ Total Files: <code>{}</code>
-★ Connect Channel: <code>{}</code>
-★ Under Construction: <code>{}</code>
+★ Users: <code>{}</code>
+★ Channel in Connection: <code>{}</code>
 ★ Used: <code>{}</code> 𝙼𝚒𝙱
 ★ use: <code>{}</code> 𝙼𝚒𝙱"""
     LOG_TEXT_G = """#NewGroup
