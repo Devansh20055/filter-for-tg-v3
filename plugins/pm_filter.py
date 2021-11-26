@@ -76,7 +76,7 @@ async def next_page(bot, query):
 
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer("oKda", show_alert=True)
+        return await query.answer("This is not for you⚠️", show_alert=True)
     try:
         offset = int(offset)
     except:
@@ -125,16 +125,16 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton(" BACK", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"📃 Pages {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages")]
+            [InlineKeyboardButton("👈 BACK", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"🤧 Pages {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages")]
         )
     elif off_set is None:
-        btn.append([InlineKeyboardButton(f"🗓 {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages"), InlineKeyboardButton("NEXT ", callback_data=f"next_{req}_{key}_{n_offset}")])
+        btn.append([InlineKeyboardButton(f"🤧 {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages"), InlineKeyboardButton("NEXT ", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
-                InlineKeyboardButton(" BACK", callback_data=f"next_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f"🗓 {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages"),
-                InlineKeyboardButton("NEXT ", callback_data=f"next_{req}_{key}_{n_offset}")
+                InlineKeyboardButton("👈 BACK", callback_data=f"next_{req}_{key}_{off_set}"),
+                InlineKeyboardButton(f"🤧 {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages"),
+                InlineKeyboardButton("NEXT 👉", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
     try:
@@ -156,13 +156,13 @@ async def advantage_spoll_choker(bot, query):
     if not movies:
         return await query.answer("You are clicking on an old button which is expired.", show_alert=True)
     movie = movies[(int(movie_))]
-    await query.answer('Checking for Movie in database...')
+    await query.answer('Checking for Movie in database...🤔')
     files, offset, total_results = await get_search_results(movie, offset=0, filter=True)
     if files:
         k = (movie, files, offset, total_results)
         await auto_filter(bot, query, k)
     else:
-        k = await query.message.edit('This Movie Not Found In DataBase')
+        k = await query.message.edit('This Movie Not Found In DataBase Contact @FeedbackdcBot')
         await asyncio.sleep(10)
         await k.delete()
 
@@ -396,7 +396,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     )
                 await query.answer('Check PM, I have sent files in pm',show_alert = True)
         except UserIsBlocked:
-            await query.answer('Unblock the bot mahn !',show_alert = True)
+            await query.answer('Unblock the bot man /restart bot!',show_alert = True)
         except PeerIdInvalid:
             await query.answer(url=f"https://t.me/{temp.U_NAME}?start={file_id}")
         except Exception as e:
@@ -433,13 +433,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton(' Add Me To Your Groups ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton(' 🛑 Add Me To Your Groups 🛑 ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton(' Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton(' Updates', url='https://t.me/Umlinks')
+            InlineKeyboardButton('🔍Search🔎', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('😎Updates😎', url='https://t.me/Umlinks')
             ],[
-            InlineKeyboardButton(' Help', callback_data='help'),
-            InlineKeyboardButton(' About', callback_data='about')
+            InlineKeyboardButton('⚠️Help⚠️', callback_data='help'),
+            InlineKeyboardButton('⚕️About⚕️', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -449,14 +449,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
-            InlineKeyboardButton('Auto Filter', callback_data='autofilter')
+            InlineKeyboardButton('🚶Manual Filter🚶', callback_data='manuelfilter'),
+            InlineKeyboardButton('🔃Auto Filter🔃', callback_data='autofilter')
             ],[
-            InlineKeyboardButton('Connection', callback_data='coct'),
-            InlineKeyboardButton('Extra Mods', callback_data='extra')
+            InlineKeyboardButton('📩Connection📩', callback_data='coct'),
+            InlineKeyboardButton('🗳️Extra Mods🗳️', callback_data='extra')
             ],[
-            InlineKeyboardButton('Home', callback_data='start'),
-            InlineKeyboardButton('Status', callback_data='stats')
+            InlineKeyboardButton('🏠Home🏠', callback_data='start'),
+            InlineKeyboardButton('⚙️Status⚙️', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -466,11 +466,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('Updates', url='https://t.me/umlinks'),
-            InlineKeyboardButton(' Source', callback_data='source')
+            InlineKeyboardButton('😎Updates😎', url='https://t.me/umlinks'),
+            InlineKeyboardButton('💟Source💟', callback_data='source')
             ],[
-            InlineKeyboardButton(' Home', callback_data='start'),
-            InlineKeyboardButton(' Close', callback_data='close_data')
+            InlineKeyboardButton('🏠Home🏠', callback_data='start'),
+            InlineKeyboardButton('💣Close💣', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -636,11 +636,11 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="NEXT ",callback_data=f"next_{req}_{key}_{offset}")]
+            [InlineKeyboardButton(text=f"🤧 1/{round(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="NEXT 👉",callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="🗓 1/1",callback_data="pages")]
+            [InlineKeyboardButton(text="🤧 1/1",callback_data="pages")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if IMDB else None
     if imdb:
@@ -676,7 +676,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Here is what i found for your Movies {search}"
+        cap = f"Here is what i found for your Movies {search} \n@FeedbackdcBot"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
@@ -726,7 +726,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist)) # removing duplicates
     if not movielist:
-        k = await msg.reply("I couldn't find anything related to that. Check your spelling")
+        k = await msg.reply("I couldn't find anything related to that. Check your spelling \n@FeedbackdcBot")
         await asyncio.sleep(8)
         await k.delete()
         return
