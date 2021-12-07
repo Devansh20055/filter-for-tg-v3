@@ -1,7 +1,5 @@
 class script(object):
     START_TXT = """Hello {},
-
-╰─•>> You can download Movies & Series in Here.
 ╰─•>> Click the Below Button "Search" to Search movies.
 """
     HELP_TXT = """Hello {}
