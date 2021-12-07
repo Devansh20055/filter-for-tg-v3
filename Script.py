@@ -12,7 +12,7 @@ Here is your help information.....
 ✯ Owner : @flimrequest
 ✯ Bot Update : @groupdc
 ✯ Movie Channel: @umlinks
-✯ Bot Version: v1.0.1 [ 🤧 ]"""
+✯ Bot Version: v1.0.2 [🤧 v1.0.1 ☞ v1.0.2 🤧]"""
     SOURCE_TXT = """<b>NOTE:</b>
 - Eva Maria is a open source project. 
 - Source - https://github.com/selfie-bd/EvaMaria  
