@@ -611,7 +611,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"╚»[{get_size(file.file_size)}] {file.file_name}«╝", callback_data=f'files#{file.file_id}'
+                    text=f"╚» [{get_size(file.file_size)}] {file.file_name}«╝", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -620,11 +620,11 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"{file.file_name}",
+                    text=f"╚» {file.file_name}",
                     callback_data=f'files#{file.file_id}',
                 ),
                 InlineKeyboardButton(
-                    text=f"{get_size(file.file_size)}",
+                    text=f"╚» {get_size(file.file_size)}",
                     callback_data=f'files_#{file.file_id}',
                 ),
             ]
@@ -636,7 +636,7 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f" 🐼 1/{round(int(total_results)/10)} 🐼",callback_data="pages"), InlineKeyboardButton(text="NEXT 👉",callback_data=f"next_{req}_{key}_{offset}")]
+            [InlineKeyboardButton(text=f" 🐼 1/{round(int(total_results)/10)} 🐼",callback_data="pages"), InlineKeyboardButton(text="♤ ɴᴇxᴛ ♤",callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
@@ -737,7 +737,7 @@ async def advantage_spell_chok(msg):
                     callback_data=f"spolling#{user}#{k}",
                 )
             ] for k, movie in enumerate(movielist)]
-    btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
+    btn.append([InlineKeyboardButton(text="╚» ᴄʟᴏꜱᴇ «╝", callback_data=f'spolling#{user}#close_spellcheck')])
     await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?", reply_markup=InlineKeyboardMarkup(btn))
     
 
