@@ -33,7 +33,7 @@ InlineKeyboardButton('ꜱᴇᴀʀᴄʜ', switch_inline_query_current_chat='')
         await db.add_user(message.from_user.id, message.from_user.first_name)
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
-        buttons = [[InlineKeyboardButton('ᴀᴅᴅ ᴍᴏᴠɪᴇ ꜱᴇᴀʀᴄʜ ʙᴏᴛ ᴛᴏ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+        buttons = [[InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴏᴠɪᴇ ꜱᴇᴀʀᴄʜ ʙᴏᴛ ᴛᴏ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
 ],[InlineKeyboardButton('ꜱᴇᴀʀᴄʜ', switch_inline_query_current_chat='')
 ],[
 InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
@@ -71,7 +71,7 @@ InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
             )
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
-        buttons = [[InlineKeyboardButton('ᴀᴅᴅ ᴍᴏᴠɪᴇ ꜱᴇᴀʀᴄʜ ʙᴏᴛ ᴛᴏ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+        buttons = [[InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴏᴠɪᴇ ꜱᴇᴀʀᴄʜ ʙᴏᴛ ᴛᴏ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
 ],[InlineKeyboardButton('ꜱᴇᴀʀᴄʜ', switch_inline_query_current_chat='')
 ],[
 InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
