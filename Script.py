@@ -1,7 +1,5 @@
 class script(object):
-    START_TXT = """Hello {},
-
-╰─•>> Click the Below Button "Search" to Search movies.
+    START_TXT = """● ᴄʟɪᴄᴋ ᴛʜᴇ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ "ꜱᴇᴀʀᴄʜ" ᴛᴏ ꜱᴇᴀʀᴄʜ ᴍᴏᴠɪᴇꜱ.
 """
     HELP_TXT = """Hello {}
 Here is your help information.....
