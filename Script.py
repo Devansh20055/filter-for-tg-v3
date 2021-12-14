@@ -88,14 +88,14 @@ This module only works for my admins
     STATUS_TXT = """★ ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : <code>{}</code>
 ★ ᴜꜱᴇʀꜱ : <code>{}</code>
 ★ ᴄᴏɴɴᴇᴄᴛᴇᴅ ɢʀᴏᴜᴘ : <code>{}</code>
-★ ᴜꜱᴇᴅ: <code>{}</code> 𝙼𝚒𝙱
-★ ᴜꜱᴇ: <code>{}</code> 𝙼𝚒𝙱"""
+★ ᴜꜱᴇᴅ : <code>{}</code> 𝙼𝚒𝙱
+★ ᴜꜱᴇ : <code>{}</code> 𝙼𝚒𝙱"""
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
 ᴛᴏᴛᴀʟ ᴍᴇᴍʙᴇʀꜱ = <code>{}</code>
 Added By - {}
 """
-    LOG_TEXT_P = """#NewUser
+    LOG_TEXT_P = """#NewUser 👥
 ID - <code>{}</code>
 Name - {}
 """
