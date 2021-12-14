@@ -1,56 +1,15 @@
 class script(object):
     START_TXT = """● ᴄʟɪᴄᴋ ᴛʜᴇ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ "ꜱᴇᴀʀᴄʜ" ᴛᴏ ꜱᴇᴀʀᴄʜ ᴍᴏᴠɪᴇꜱ.
 """
-    HELP_TXT = """ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴏᴠɪᴇꜱ ɪɴ @MediaautoSearchbot
-
-ꜱᴛᴇᴘꜱ 👇
-
-ʜᴇʀᴇ ɪꜱ ʏᴏᴜʀ ʜᴇʟᴘ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ.....
-
-● ᴄʟɪᴄᴋ ᴛʜᴇ ʙᴜᴛᴛᴏɴ "ꜱᴇᴀʀᴄʜ" ᴛᴏ ꜱᴇᴀʀᴄʜ ᴍᴏᴠɪᴇꜱ.
-● ᴛʜᴇɴ ᴛʏᴘᴇ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ.
-● ɴᴇxᴛ ᴄʟɪᴄᴋ ᴡʜɪᴄʜ ꜱɪᴢᴇ ʏᴏᴜ ᴡᴀɴᴛ.😍
-
-ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴ 
-
-● ᴀᴅᴅ ʙᴏᴛ ᴛᴏ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴀᴅᴍɪɴ ʀɪɢʜᴛꜱ.
-● ᴛʜᴇɴ ꜱᴇɴᴅ ʏᴏᴜʀ ᴘᴜʙʟɪᴄ ᴄʜᴀɴɴᴇʟ ᴍᴏᴠɪᴇ ʟᴀꜱᴛ ꜰɪʟᴇ ᴛᴏ ʙᴏᴛ.
-● ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ɪɴ ɢʀᴏᴜᴘ
-
-ʙᴏᴛ ᴜꜱᴇʀꜱ
-
-● ꜰɪʀꜱᴛ ᴄʟɪᴄᴋ ꜱᴛᴀʀᴛ
-● ᴄʟɪᴄᴋ ꜱᴇᴀʀᴄʜ ᴏʀ ᴛʏᴘᴇ /ꜱᴇᴀʀᴄʜ ᴡɪᴛʜ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ
-● ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴍᴏᴠɪᴇ ᴡʜɪᴄʜ ꜱɪᴢᴇ ʏᴏᴜ ᴡᴀɴᴛ ɪᴛ'ꜱ ᴅᴏɴᴇ 👍
-
-ɢʀᴏᴜᴘ ᴜꜱᴇʀꜱ
-
-● ᴛʏᴘᴇ ᴀɴʏ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ᴀɴᴅ ꜱᴇɴᴅ ɪᴛ ᴛᴏ ɢʀᴏᴜᴘ
-● ᴛʜᴇɴ ᴛʜᴇ ᴍᴏᴠɪᴇ ᴄᴏᴍᴇ ᴛᴏ ʀᴇᴘʟʏ ᴍᴇꜱꜱᴀɢᴇ ɴᴇxᴛ ᴄʟɪᴄᴋ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ᴏʀ ꜱɪᴢᴇ
-● ɴᴇxᴛ ꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ɪꜱ ʜᴇʀᴇ.
-
-ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ ᴏʀ ᴄʜᴀɴɴᴇʟ ᴀᴅᴍɪɴꜱ
-
-● ᴍᴀᴋᴇ ᴀ ʙᴏᴛ ᴀꜱ ᴀ ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ
-● ᴛʜᴇɴ ᴀꜱᴋ ᴀɴʏ ᴍᴏᴠɪᴇꜱ ⌛
-....................................................................
-
-ʙᴏᴛ ɪꜱ ᴡᴏʀᴋɪɴɢ 🐯
-
-/ꜱᴛᴀʀᴛ ᴛᴏ ᴀʟɪᴠᴇ ᴄʜᴇᴄᴋ"""
-    ABOUT_TXT = """✯ I am a: {}
-✯ You can access me: <a href=https://t.me/groupdc>Group Dc Bots</a>
-✯ Admin : @Selfiebd
-✯ Owner : @flimrequest
-✯ Bot Update : @groupdc
-✯ Movie Channel: @umlinks
-✯ Bot Version: v1.0.2 [🤧 v1.0.1 ☞ v1.0.2 🤧]"""
-    SOURCE_TXT = """<b>NOTE:</b>
-- Eva Maria is a open source project. 
-- Source - https://github.com/selfie-bd/EvaMaria  
+    HELP_TXT = """ᴍᴏᴠɪᴇ & ꜱᴇʀɪᴇꜱ ꜱᴇᴀʀᴄʜ ᴄʟɪᴄᴋ <a href=https://t.me/logdcbots/7>/ʜᴇʟᴘ</a> ᴛᴏ ɢᴇᴛ ᴍᴏʀᴇ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ʙᴏᴛ"""
+    ABOUT_TXT = """✯
+✯ ʏᴏᴜ ᴄᴀɴ ᴀᴄᴄᴇꜱꜱ ᴍᴇ: <a href=https://t.me/groupdc>ɢʀᴏᴜᴘ ᴅᴄ ꜱᴜᴘᴘᴏʀᴛ</a>
+✯ ʙᴏᴛ ᴠᴇʀꜱɪᴏɴ: ᴠ1.0.2 [🤧 ᴠ1.0.1 ☞ ᴠ1.0.2 🤧]"""
+    SOURCE_TXT = """
+- Source - Ask Here @groupdc
 
 <b>DEVS:</b>
-- <a href=https://t.me/umlinks>Movie Channel</a>"""
+- <a href=https://t.me/groupdc>ɢʀᴏᴜᴘ ᴅᴄ ꜱᴜᴘᴘᴏʀᴛ</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and EvaMaria will respond whenever a keyword is found the message
@@ -126,14 +85,14 @@ This module only works for my admins
 • /unban  - <code>to unban a user.</code>
 • /channel - <code>to get list of total connected channels</code>
 • /broadcast - <code>to broadcast a message to all users</code>"""
-    STATUS_TXT = """★ Total Files: <code>{}</code>
-★ Users: <code>{}</code>
-★ Channel in Connection: <code>{}</code>
-★ Used: <code>{}</code> 𝙼𝚒𝙱
-★ use: <code>{}</code> 𝙼𝚒𝙱"""
+    STATUS_TXT = """★ ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : <code>{}</code>
+★ ᴜꜱᴇʀꜱ : <code>{}</code>
+★ ᴄᴏɴɴᴇᴄᴛᴇᴅ ɢʀᴏᴜᴘ : <code>{}</code>
+★ ᴜꜱᴇᴅ: <code>{}</code> 𝙼𝚒𝙱
+★ ᴜꜱᴇ: <code>{}</code> 𝙼𝚒𝙱"""
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
-Total Members = <code>{}</code>
+ᴛᴏᴛᴀʟ ᴍᴇᴍʙᴇʀꜱ = <code>{}</code>
 Added By - {}
 """
     LOG_TEXT_P = """#NewUser
