@@ -125,17 +125,16 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("♤ ʙᴀᴄᴋ ♤", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f" 🐼 Pages {round(int(offset)/10)+1} / {round(total/10)}  🐼", callback_data="pages"), InlineKeyboardButton('ℹ️ How to Download ℹ️', url='https://t.me/how2downloads/12')]
+            [InlineKeyboardButton("♤ ʙᴀᴄᴋ ♤", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f" 🐼 Pages {round(int(offset)/10)+1} / {round(total/10)}  🐼", callback_data="pages"), InlineKeyboardButton(f"ℹ️ How to Download ℹ️, url='https://t.me/how2downloads/12")]
         )
     elif off_set is None:
-        btn.append([InlineKeyboardButton(f"🐼 {round(int(offset)/10)+1} / {round(total/10)}  🐼", callback_data="pages"), InlineKeyboardButton("♤ ɴᴇxᴛ ♤", callback_data=f"next_{req}_{key}_{n_offset}"), InlineKeyboardButton('ℹ️ How to Download ℹ️', url='https://t.me/how2downloads/12')])
+        btn.append([InlineKeyboardButton(f"🐼 {round(int(offset)/10)+1} / {round(total/10)}  🐼", callback_data="pages"), InlineKeyboardButton("♤ ɴᴇxᴛ ♤", callback_data=f"next_{req}_{key}_{n_offset}"), InlineKeyboardButton(f"ℹ️ How to Download ℹ️, url='https://t.me/how2downloads/12")])
     else:
         btn.append(
             [
                 InlineKeyboardButton("♤ ʙᴀᴄᴋ ♤", callback_data=f"next_{req}_{key}_{off_set}"),
                 InlineKeyboardButton(f" 🐼 {round(int(offset)/10)+1} / {round(total/10)} 🐼", callback_data="pages"),
                 InlineKeyboardButton("♤ ɴᴇxᴛ ♤", callback_data=f"next_{req}_{key}_{n_offset}")
-                InlineKeyboardButton('ℹ️ How to Download ℹ️', url='https://t.me/how2downloads/12')
             ],
         )
     try:
