@@ -8,8 +8,8 @@ class script(object):
     SOURCE_TXT = """
 - Source - Ask Here @off_chats
 
-- <a herf=https://t.me/ITS_NOT_ROMEO> <b><i>🔱 MY CREATOR 🔱 </b></i> </a>
-- <a href=https://t.me/off_chats>ɢʀᴏᴜᴘ ꜱᴜᴘᴘᴏʀᴛ</a>"""
+ - <b><i>🔱 MY CREATOR 👉🏻 @ITS_NOT_ROMEO🔱 </b></i> 
+- <a href=https://t.me/off_chats>support group </a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and EvaMaria will respond whenever a keyword is found the message
