@@ -436,7 +436,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('ꜱᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇꜱ', url='https://t.me/Umlinks')
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇꜱ', url='https://t.me/team_silent_king')
             ],[
             InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
@@ -466,7 +466,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇꜱ', url='https://t.me/umlinks'),
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇꜱ', url='https://t.me/team_silent_king'),
             InlineKeyboardButton('ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ', callback_data='source')
             ],[
             InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start'),
@@ -726,7 +726,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist)) # removing duplicates
     if not movielist:
-        k = await msg.reply("I couldn't find anything related to that. Check your spelling \n@FeedbackdcBot")
+        k = await msg.reply("I couldn't find anything related to that. Check your spelling ")
         await asyncio.sleep(8)
         await k.delete()
         return
