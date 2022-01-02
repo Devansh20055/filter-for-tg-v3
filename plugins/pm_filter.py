@@ -125,10 +125,10 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("♤ ʙᴀᴄᴋ ♤", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f" 🐼 Pages {round(int(offset)/10)+1} / {round(total/10)}  🐼", callback_data="pages"), InlineKeyboardButton(f"ℹ️ How to Download ℹ️, url='https://t.me/how2downloads/12")]
+            [InlineKeyboardButton("♤ ʙᴀᴄᴋ ♤", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f" 🐼 Pages {round(int(offset)/10)+1} / {round(total/10)}  🐼", callback_data="pages"), InlineKeyboardButton(f"ℹ️ How to Download ℹ️, url='https://youtu.be/KWzLegzLvCU")]
         )
     elif off_set is None:
-        btn.append([InlineKeyboardButton(f"🐼 {round(int(offset)/10)+1} / {round(total/10)}  🐼", callback_data="pages"), InlineKeyboardButton("♤ ɴᴇxᴛ ♤", callback_data=f"next_{req}_{key}_{n_offset}"), InlineKeyboardButton(f"ℹ️ How to Download ℹ️, url='https://t.me/how2downloads/12")])
+        btn.append([InlineKeyboardButton(f"🐼 {round(int(offset)/10)+1} / {round(total/10)}  🐼", callback_data="pages"), InlineKeyboardButton("♤ ɴᴇxᴛ ♤", callback_data=f"next_{req}_{key}_{n_offset}"), InlineKeyboardButton(f"ℹ️ How to Download ℹ️, url='https://youtu.be/KWzLegzLvCU")])
     else:
         btn.append(
             [
@@ -162,7 +162,7 @@ async def advantage_spoll_choker(bot, query):
         k = (movie, files, offset, total_results)
         await auto_filter(bot, query, k)
     else:
-        k = await query.message.edit('This Movie Not Found In DataBase Contact @FeedbackdcBot')
+        k = await query.message.edit('This Movie Not Found In DataBase Contact at @off_chats')
         await asyncio.sleep(10)
         await k.delete()
 
@@ -438,8 +438,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ꜱᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
             InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇꜱ', url='https://t.me/team_silent_king')
             ],[
-            InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('ʜᴇʟᴘ🆘', callback_data='help'),
+            InlineKeyboardButton('ᴀʙᴏᴜᴛ📣', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -449,14 +449,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('ᴍᴀɴᴜᴀʟ ꜰɪʟᴛᴇʀ', callback_data='manuelfilter'),
-            InlineKeyboardButton('ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ', callback_data='autofilter')
+            InlineKeyboardButton('👁‍🗨ᴍᴀɴᴜᴀʟ ꜰɪʟᴛᴇʀ👁‍🗨', callback_data='manuelfilter'),
+            InlineKeyboardButton('🔱ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ🔱', callback_data='autofilter')
             ],[
-            InlineKeyboardButton('ᴄᴏɴɴᴇᴄᴛɪᴏɴ', callback_data='coct'),
-            InlineKeyboardButton('ᴇxᴛʀᴀ ᴍᴏᴅꜱ', callback_data='extra')
+            InlineKeyboardButton('🌐ᴄᴏɴɴᴇᴄᴛɪᴏɴ🌐', callback_data='coct'),
+            InlineKeyboardButton('♨️ᴇxᴛʀᴀ ᴍᴏᴅs♨️', callback_data='extra')
             ],[
-            InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('ꜱᴛᴀᴛꜱ', callback_data='stats')
+            InlineKeyboardButton('🏠ʜᴏᴍᴇ🏠', callback_data='start'),
+            InlineKeyboardButton('⚜️ꜱᴛᴀᴛs⚜️', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -466,10 +466,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇꜱ', url='https://t.me/team_silent_king'),
-            InlineKeyboardButton('ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ', callback_data='source')
+            InlineKeyboardButton('✅ᴜᴘᴅᴀᴛᴇꜱ✅', url='https://t.me/team_silent_king'),
+            InlineKeyboardButton('🤖ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ🤖', callback_data='source')
             ],[
-            InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start'),
+            InlineKeyboardButton('🏠ʜᴏᴍᴇ 🏠', callback_data='start'),
             InlineKeyboardButton('ᴄʟᴏꜱᴇ', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
