@@ -2,13 +2,13 @@ class script(object):
     START_TXT = """● ᴄʟɪᴄᴋ ᴛʜᴇ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ "ꜱᴇᴀʀᴄʜ" ᴛᴏ ꜱᴇᴀʀᴄʜ ᴍᴏᴠɪᴇꜱ.
 """
     HELP_TXT = """ᴍᴏᴠɪᴇ & ꜱᴇʀɪᴇꜱ ꜱᴇᴀʀᴄʜ ᴄʟɪᴄᴋ <a href=https://t.me/team_silent_king>/ʜᴇʟᴘ</a> ᴛᴏ ɢᴇᴛ ᴍᴏʀᴇ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ʙᴏᴛ"""
-    ABOUT_TXT = """✯
+    ABOUT_TXT = """✯ for more join :- ⚜️ @team_silent_king ⚜️
 ✯ ʏᴏᴜ ᴄᴀɴ ᴀᴄᴄᴇꜱꜱ ᴍᴇ: <a href=https://t.me/off_chats > ꜱᴜᴘᴘᴏʀᴛ</a>
-✯ ʙᴏᴛ ᴠᴇʀꜱɪᴏɴ: ᴠ1.0.2 [🤧 ᴠ1.0.1 ☞ ᴠ1.0.2 🤧]"""
+✯ ʙᴏᴛ ᴠᴇʀꜱɪᴏɴ: ᴠ1.0.2 [🔱 ᴠ2 ☞ ᴠ3 ✅]"""
     SOURCE_TXT = """
 - Source - Ask Here @off_chats
 
-<b>DEVS:</b>
+ <a herf=https://t.me/ITS_NOT_ROMEO> <b><i>🔱 MY CREATOR 🔱 </b></i> </a>
 - <a href=https://t.me/off_chats>ɢʀᴏᴜᴘ ꜱᴜᴘᴘᴏʀᴛ</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
@@ -88,7 +88,6 @@ This module only works for my admins
 • /ban  - <code>to ban a user.</code>
 • /unban  - <code>to unban a user.</code>
 • /channel - <code>to get list of total connected channels</code>
-• /broadcast - <code>to broadcast a message to all users</code> 
 @team_silent_king """
     STATUS_TXT = """★ ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : <code>{}</code>
 ★ ᴜꜱᴇʀꜱ : <code>{}</code>
