@@ -8,7 +8,7 @@ class script(object):
     SOURCE_TXT = """
 - Source - Ask Here @off_chats
 
- <a herf=https://t.me/ITS_NOT_ROMEO> <b><i>🔱 MY CREATOR 🔱 </b></i> </a>
+- <a herf=https://t.me/ITS_NOT_ROMEO> <b><i>🔱 MY CREATOR 🔱 </b></i> </a>
 - <a href=https://t.me/off_chats>ɢʀᴏᴜᴘ ꜱᴜᴘᴘᴏʀᴛ</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
