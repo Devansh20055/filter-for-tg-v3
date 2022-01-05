@@ -76,7 +76,7 @@ async def next_page(bot, query):
 
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer("This is not for you⚠️", show_alert=True)
+        return await query.answer("This is not for you⚠️write your own message", show_alert=True)
     try:
         offset = int(offset)
     except:
@@ -433,7 +433,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'https://t.me/STORE_FOR_ALL_BOT?startgroup=true')
             ],[
             InlineKeyboardButton('ꜱᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
             InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇꜱ', url='https://t.me/team_silent_king')
@@ -607,11 +607,12 @@ async def auto_filter(client, msg, spoll=False):
     else:
         message = msg.message.reply_to_message # msg will be callback query
         search, files, offset, total_results = spoll
-    if SINGLE_BUTTON:
+    if DOUNLE_BUTTON:
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"╚» [{get_size(file.file_size)}] {file.file_name}«╝", callback_data=f'files#{file.file_id}'
+                    text=f" [{get_size 🙃(file.file_size)}] {file.file_name} 🙃", callback_data=f'files#{file.file_id}'
+                  
                 ),
             ]
             for file in files
@@ -620,11 +621,11 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"╚» {file.file_name}",
+                    text=f"🙃 {file.file_name}",
                     callback_data=f'files#{file.file_id}',
                 ),
                 InlineKeyboardButton(
-                    text=f"╚» {get_size(file.file_size)}",
+                    text=f"🙃 {get_size(file.file_size)}",
                     callback_data=f'files_#{file.file_id}',
                 ),
             ]
@@ -636,11 +637,11 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f" 🐼 1/{round(int(total_results)/10)} 🐼",callback_data="pages"), InlineKeyboardButton(text="♤ ɴᴇxᴛ ♤",callback_data=f"next_{req}_{key}_{offset}")]
+            [InlineKeyboardButton(text=f" 🙃 1/{round(int(total_results)/10)} 🙃",callback_data="pages"), InlineKeyboardButton(text="♤ ɴᴇxᴛ ♤",callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text=" 🐼 1/1 🐼",callback_data="pages")]
+            [InlineKeyboardButton(text=" 🙃 1/1 🙃",callback_data="pages")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if IMDB else None
     if imdb:
@@ -676,7 +677,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Here is what i found for your Movies {search} \n@FeedbackdcBot"
+        cap = f"Here is what i found for your Movies {search} \n CONTACT US AT :- @off_chats"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
