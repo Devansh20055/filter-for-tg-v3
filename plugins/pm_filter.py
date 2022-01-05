@@ -607,7 +607,7 @@ async def auto_filter(client, msg, spoll=False):
     else:
         message = msg.message.reply_to_message # msg will be callback query
         search, files, offset, total_results = spoll
-    if DOUNLE_BUTTON:
+    if SINGLE_BUTTON:
         btn = [
             [
                 InlineKeyboardButton(
