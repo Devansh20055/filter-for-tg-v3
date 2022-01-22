@@ -2,17 +2,17 @@
   <img src="assets/logo.jpg" alt="Eva Maria Logo">
 </p>
 <h1 align="center">
-  <b>Eva Maria Bot</b>
+  <b>auto filter bot</b>
 </h1>
 
 
-[![Stars](https://img.shields.io/github/stars/EvamariaTG/EvaMaria?style=flat-square&color=yellow)](https://github.com/EvamariaTG/EvaMaria/stargazers)
-[![Forks](https://img.shields.io/github/forks/EvamariaTG/EvaMaria?style=flat-square&color=orange)](https://github.com/EvamariaTG/EvaMaria/fork)
-[![Size](https://img.shields.io/github/repo-size/EvamariaTG/EvaMaria?style=flat-square&color=green)](https://github.com/EvamariaTG/EvaMaria/)   
-[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/EvamariaTG/EvaMaria)   
-[![Contributors](https://img.shields.io/github/contributors/EvamariaTG/EvaMaria?style=flat-square&color=green)](https://github.com/EvamariaTG/EvaMaria/graphs/contributors)
-[![License](https://img.shields.io/badge/License-AGPL-blue)](https://github.com/EvamariaTG/EvaMaria/blob/main/LICENSE)
-[![Sparkline](https://stars.medv.io/EvamariaTG/EvaMaria.svg)](https://stars.medv.io/EvamariaTG/EvaMaria)
+[![Stars](https://img.shields.io/github/stars/EvamariaTG/EvaMaria?style=flat-square&color=yellow)](https://github.com/Devansh20055/filter-for-tg-v3/stargazers)
+[![Forks](https://img.shields.io/github/forks/EvamariaTG/EvaMaria?style=flat-square&color=orange)](https://github.com/Devansh20055/filter-for-tg-v3/fork)
+[![Size](https://img.shields.io/github/repo-size/EvamariaTG/EvaMaria?style=flat-square&color=green)](https://github.com/Devansh20055/filter-for-tg-v3/)   
+[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/Devansh20055/filter-for-tg-v3)   
+[![Contributors](https://img.shields.io/github/contributors/EvamariaTG/EvaMaria?style=flat-square&color=green)](https://github.com/Devansh20055/filter-for-tg-v3/graphs/contributors)
+[![License](https://img.shields.io/badge/License-AGPL-blue)](https://github.com/Devansh20055/filter-for-tg-v3/blob/main/LICENSE)
+[![Sparkline](https://stars.medv.io/EvamariaTG/EvaMaria.svg)](https://stars.medv.io/Devansh20055/filter-for-tg-v3)
 
 
 ## Features
@@ -104,13 +104,13 @@ python3 bot.py
 [![telegram badge](https://img.shields.io/badge/Telegram-Channel-30302f?style=flat&logo=telegram)](https://telegram.dog/EvaMariaUpdates)
 
 ## Credits 
-* [![EvaMaria-Devs](https://img.shields.io/static/v1?label=EvaMaria&message=devs&color=critical)](https://telegram.dog/EvaMariaDevs)
+* [![bot-Devs](https://img.shields.io/static/v1?label=EvaMaria&message=devs&color=critical)](https://t.me/team_silent_king)
 
 
 ## Thanks to 
  - Thanks To Dan For His Awsome [Libary](https://github.com/pyrogram/pyrogram)
  - Thanks To Mahesh For His Awesome [Media-Search-bot](https://github.com/Mahesh0253/Media-Search-bot)
- - Thanks To [Trojanz](https://github.com/trojanzhex) for Their Awesome [Unlimited Filter Bot](https://github.com/TroJanzHEX/Unlimited-Filter-Bot) And [AutoFilterBoT](https://github.com/trojanzhex/auto-filter-bot)
+ - Thanks To [Trojanz](https://github.com/trojanzhex) for Their Awesome Unlimited Filter Bot And AutoFilterBoT
  - Thanks To All Everyone In This Journey
 
 ### Note
@@ -122,7 +122,7 @@ Fork the repo and edit as per your needs.
 
 ## Disclaimer
 [![GNU Affero General Public License 2.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
-Licensed under [GNU AGPL 2.0.](https://github.com/EvamariaTG/evamaria/blob/master/LICENSE)
+Licensed under [GNU AGPL 2.0.](https://github.com/Devansh20055/filter-for-tg-v3/blob/master/LICENSE)
 Selling The Codes To Other People For Money Is *Strictly Prohibited*.
 
 ## Inspiration
